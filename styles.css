@@ -1,0 +1,40 @@
+body {
+    font-family: dejavu sans mono;
+}
+
+.section {
+    border: 3pt solid black;
+    border-radius: 6pt;
+    margin: 6pt 0;
+}
+
+.heading {
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 20pt;
+    text-align: center;
+    padding: 2pt 0 4pt 0;
+}
+
+.line {
+    padding-bottom: 3pt;
+}
+
+.key {
+    font-family: dejavu sans mono;
+    border: 1pt solid black;
+    border-radius: 2pt;
+    margin: 2pt;
+    padding: 0 2pt;
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+.plus {
+    font-weight: bold;
+}
+
+.function {
+    font-family: roboto slab;
+}
