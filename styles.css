@@ -1,11 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Roboto+Slab&display=swap');
+
+@font-face {
+    font-family: 'dejavu sans mono';
+    src: url('DejaVuSansMono-webfont.woff') format('woff'),
+         url('DejaVuSansMono-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dejavu sans mono';
+    src: url('DejaVuSansMono-Bold-webfont.woff') format('woff'),
+         url('DejaVuSansMono-Bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
+    margin: 0;
+}
+
+.noprint {
     font-family: dejavu sans mono;
+}
+
+.noprint>p {
+    margin: 1em;
+}
+
+.container {
+    font-family: dejavu sans mono;
+    width: 8.5in;
+    height: 11in;
+    margin: 0;
+    border: 1px solid black;
+    padding: .25in;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .section {
     border: 3pt solid black;
     border-radius: 6pt;
-    margin: 6pt 0;
+    margin: 3pt;
 }
 
 .heading {
@@ -37,4 +75,14 @@ body {
 
 .function {
     font-family: roboto slab;
+}
+
+@media print {
+    .container {
+        border: none;
+    }
+
+    .noprint {
+        display: none;
+    }
 }

@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # <div class="line"><span class="key">Ctrl</span>+<span class="key">z</span>: <span class="function">Undo</span></div>
 shortcuts = '''Window management
 ⊞+Tab:Show open windows
@@ -55,7 +57,9 @@ output = '''<!DOCTYPE html>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>'''
+<body>
+
+<div class="container">'''
 
 for section in shortcuts.split('#'):
     lines = section.split('\n')
@@ -81,12 +85,13 @@ for section in shortcuts.split('#'):
 
     output += '</div>\n\n'
 
-output += '''</body>
+output += '''</div>
+</body>
 </html>
 '''
 
 print(output)
 
-file = open('keyboard.html', 'w')
+file = open('index.html', 'w')
 file.write(output)
 file.close()
