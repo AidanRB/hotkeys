@@ -13,6 +13,7 @@ Ctrl+F4:Close tab
 ⊞+l:Lock your computer
 ⊞+d:Show desktop
 ⊞+p:Choose projector mode
+⊞+Shift+s:Screenshot and crop
 #Browsing
 Ctrl+f:Find
 F5:Refresh
